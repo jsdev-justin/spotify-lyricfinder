@@ -1,0 +1,29 @@
+{
+  "name": "spotify-lyricfinder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "heroku-postbuild": "cd client && npm install && npm run build",
+    "dev": "nodemon server.js",
+    "client": "npm run start --prefix client",
+    "con": "concurrently \"npm run dev\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com-jsdev_justin:jsdev-justin/spotify-lyricfinder.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "lyrics-finder": "^21.7.0",
+    "spotify-web-api-node": "^5.0.2"
+  },
+  "devDependencies": {
+    "concurrently": "^6.0.2"
+  }
+}
