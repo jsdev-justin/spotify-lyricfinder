@@ -1,7 +1,7 @@
 const express = require('express');
 const SpotifyWebApi = require("spotify-web-api-node");
 const lyricsFinder = require("lyrics-finder");
-
+const path = require('path');
 const app = express();
 const PORT = process.env.PORT || 3005;
 
